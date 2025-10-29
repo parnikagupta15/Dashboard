@@ -1,0 +1,94 @@
+.MainDash{
+    /* padding-top: 1rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.Dashboard{
+    background-color:rgb(248, 212, 154);
+    border-radius: 0.7rem;
+    padding: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+.main-dash {
+  padding: 20px;
+  width: 100%;
+}
+
+.Dashboard h2 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+.welcome-banner p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-bottom: 24px;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  margin-right: 16px;
+}
+
+.details h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.details h1 {
+  margin: 4px 0 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #000;
+}
+.analyze-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  color: #2563eb;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.analyze-btn:hover {
+  background: #f1f5f9;
+  transform: translateY(-1px);
+}
+@media screen and (max-width: 1200px) {
+    .MainDash{
+        justify-content:flex-start;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .MainDash{
+        align-items: center;
+    }
+}
